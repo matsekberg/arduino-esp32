@@ -15481,4 +15481,162 @@ aw2eth.menu.DebugLevel.debug.build.code_debug=4
 aw2eth.menu.DebugLevel.verbose=Verbose
 aw2eth.menu.DebugLevel.verbose.build.code_debug=5
 
+
 ##############################################################
+##############################################################
+#  CANMOD series boards, also VE.direct and Cur.sense
+##############################################################
+##############################################################
+
+
+canmod_mini_v2.name=CANMOD MINI v2
+
+canmod_mini_v2.bootloader.tool=esptool_py
+canmod_mini_v2.bootloader.tool.default=esptool_py
+
+canmod_mini_v2.upload.tool=esptool_py
+canmod_mini_v2.upload.tool.default=esptool_py
+canmod_mini_v2.upload.tool.network=esp_ota
+
+canmod_mini_v2.upload.maximum_size=1310720
+canmod_mini_v2.upload.maximum_data_size=327680
+canmod_mini_v2.upload.flags=
+canmod_mini_v2.upload.extra_flags=
+
+canmod_mini_v2.serial.disableDTR=true
+canmod_mini_v2.serial.disableRTS=true
+
+canmod_mini_v2.build.tarch=xtensa
+canmod_mini_v2.build.bootloader_addr=0x1000
+canmod_mini_v2.build.target=esp32
+canmod_mini_v2.build.mcu=esp32
+canmod_mini_v2.build.core=esp32
+canmod_mini_v2.build.variant=canmod_mini_v2
+canmod_mini_v2.build.board=CANMO_MINI_v2
+
+canmod_mini_v2.build.f_cpu=240000000L
+canmod_mini_v2.build.flash_mode=dio
+canmod_mini_v2.build.flash_size=4MB
+canmod_mini_v2.build.boot=dio
+canmod_mini_v2.build.partitions=default
+canmod_mini_v2.build.defines=
+
+canmod_mini_v2.menu.FlashFreq.80=80MHz
+canmod_mini_v2.menu.FlashFreq.80.build.flash_freq=80m
+
+# 320k App-NVS, 3.5MB APP, 128K SPIFFS
+canmod_mini_v2.menu.PartitionScheme.canmod_noota_4MB=4MB No OTA (320k App-NVS, 3.5MB APP, 128K SPIFFS)
+canmod_mini_v2.menu.PartitionScheme.canmod_noota_4MB.build.partitions=canmod_noota_4MB
+canmod_mini_v2.menu.PartitionScheme.canmod_noarduiteota_4MB.upload.maximum_size=3670016
+# 320k App-NVS, 7.5MB APP, 128K SPIFFS
+canmod_mini_v2.menu.PartitionScheme.canmod_noota_8MB=8MB No OTA (320k App-NVS, 7.5MB APP, 128K SPIFFS)
+canmod_mini_v2.menu.PartitionScheme.canmod_noota_8MB.build.partitions=canmod_noota_8MB
+canmod_mini_v2.menu.PartitionScheme.canmod_noota_8MB.upload.maximum_size=3670016
+
+canmod_mini_v2.menu.CPUFreq.240=240MHz (WiFi/BT)
+canmod_mini_v2.menu.CPUFreq.240.build.f_cpu=240000000L
+canmod_mini_v2.menu.CPUFreq.160=160MHz (WiFi/BT)
+canmod_mini_v2.menu.CPUFreq.160.build.f_cpu=160000000L
+canmod_mini_v2.menu.CPUFreq.80=80MHz (WiFi/BT)
+canmod_mini_v2.menu.CPUFreq.80.build.f_cpu=80000000L
+
+canmod_mini_v2.menu.UploadSpeed.115200=115200
+canmod_mini_v2.menu.UploadSpeed.115200.upload.speed=115200
+canmod_mini_v2.menu.UploadSpeed.230400=230400
+canmod_mini_v2.menu.UploadSpeed.230400.upload.speed=230400
+canmod_mini_v2.menu.UploadSpeed.460800.linux=460800
+canmod_mini_v2.menu.UploadSpeed.460800.macosx=460800
+canmod_mini_v2.menu.UploadSpeed.460800.upload.speed=460800
+canmod_mini_v2.menu.UploadSpeed.921600=921600
+canmod_mini_v2.menu.UploadSpeed.921600.upload.speed=921600
+
+canmod_mini_v2.menu.DebugLevel.none=None
+canmod_mini_v2.menu.DebugLevel.none.build.code_debug=0
+canmod_mini_v2.menu.DebugLevel.error=Error
+canmod_mini_v2.menu.DebugLevel.error.build.code_debug=1
+canmod_mini_v2.menu.DebugLevel.warn=Warn
+canmod_mini_v2.menu.DebugLevel.warn.build.code_debug=2
+canmod_mini_v2.menu.DebugLevel.info=Info
+canmod_mini_v2.menu.DebugLevel.info.build.code_debug=3
+canmod_mini_v2.menu.DebugLevel.debug=Debug
+canmod_mini_v2.menu.DebugLevel.debug.build.code_debug=4
+canmod_mini_v2.menu.DebugLevel.verbose=Verbose
+canmod_mini_v2.menu.DebugLevel.verbose.build.code_debug=5
+
+##############################################################
+
+# v3: changed pins for TWIR, TWIT
+
+canmod_mini_v3.name=CANMOD MINI v3
+
+canmod_mini_v3.bootloader.tool=esptool_py
+canmod_mini_v3.bootloader.tool.default=esptool_py
+
+canmod_mini_v3.upload.tool=esptool_py
+canmod_mini_v3.upload.tool.default=esptool_py
+canmod_mini_v3.upload.tool.network=esp_ota
+
+canmod_mini_v3.upload.maximum_size=1310720
+canmod_mini_v3.upload.maximum_data_size=327680
+canmod_mini_v3.upload.flags=
+canmod_mini_v3.upload.extra_flags=
+
+canmod_mini_v3.serial.disableDTR=true
+canmod_mini_v3.serial.disableRTS=true
+
+canmod_mini_v3.build.tarch=xtensa
+canmod_mini_v3.build.bootloader_addr=0x1000
+canmod_mini_v3.build.target=esp32
+canmod_mini_v3.build.mcu=esp32
+canmod_mini_v3.build.core=esp32
+canmod_mini_v3.build.variant=canmod_mini_v3
+canmod_mini_v3.build.board=CANMO_MINI_v3
+
+canmod_mini_v3.build.f_cpu=240000000L
+canmod_mini_v3.build.flash_mode=dio
+canmod_mini_v3.build.flash_size=4MB
+canmod_mini_v3.build.boot=dio
+canmod_mini_v3.build.partitions=default
+canmod_mini_v3.build.defines=
+
+canmod_mini_v3.menu.FlashFreq.80=80MHz
+canmod_mini_v3.menu.FlashFreq.80.build.flash_freq=80m
+
+# 320k App-NVS, 3.5MB APP, 128K SPIFFS
+canmod_mini_v3.menu.PartitionScheme.canmod_noota_4MB=4MB No OTA (320k App-NVS, 3.5MB APP, 128K SPIFFS)
+canmod_mini_v3.menu.PartitionScheme.canmod_noota_4MB.build.partitions=canmod_noota_4MB
+canmod_mini_v3.menu.PartitionScheme.canmod_noarduiteota_4MB.upload.maximum_size=3670016
+# 320k App-NVS, 7.5MB APP, 128K SPIFFS
+canmod_mini_v3.menu.PartitionScheme.canmod_noota_8MB=8MB No OTA (320k App-NVS, 7.5MB APP, 128K SPIFFS)
+canmod_mini_v3.menu.PartitionScheme.canmod_noota_8MB.build.partitions=canmod_noota_8MB
+canmod_mini_v3.menu.PartitionScheme.canmod_noota_8MB.upload.maximum_size=3670016
+
+canmod_mini_v3.menu.CPUFreq.240=240MHz (WiFi/BT)
+canmod_mini_v3.menu.CPUFreq.240.build.f_cpu=240000000L
+canmod_mini_v3.menu.CPUFreq.160=160MHz (WiFi/BT)
+canmod_mini_v3.menu.CPUFreq.160.build.f_cpu=160000000L
+canmod_mini_v3.menu.CPUFreq.80=80MHz (WiFi/BT)
+canmod_mini_v3.menu.CPUFreq.80.build.f_cpu=80000000L
+
+canmod_mini_v3.menu.UploadSpeed.115200=115200
+canmod_mini_v3.menu.UploadSpeed.115200.upload.speed=115200
+canmod_mini_v3.menu.UploadSpeed.230400=230400
+canmod_mini_v3.menu.UploadSpeed.230400.upload.speed=230400
+canmod_mini_v3.menu.UploadSpeed.460800.linux=460800
+canmod_mini_v3.menu.UploadSpeed.460800.macosx=460800
+canmod_mini_v3.menu.UploadSpeed.460800.upload.speed=460800
+canmod_mini_v3.menu.UploadSpeed.921600=921600
+canmod_mini_v3.menu.UploadSpeed.921600.upload.speed=921600
+
+canmod_mini_v3.menu.DebugLevel.none=None
+canmod_mini_v3.menu.DebugLevel.none.build.code_debug=0
+canmod_mini_v3.menu.DebugLevel.error=Error
+canmod_mini_v3.menu.DebugLevel.error.build.code_debug=1
+canmod_mini_v3.menu.DebugLevel.warn=Warn
+canmod_mini_v3.menu.DebugLevel.warn.build.code_debug=2
+canmod_mini_v3.menu.DebugLevel.info=Info
+canmod_mini_v3.menu.DebugLevel.info.build.code_debug=3
+canmod_mini_v3.menu.DebugLevel.debug=Debug
+canmod_mini_v3.menu.DebugLevel.debug.build.code_debug=4
+canmod_mini_v3.menu.DebugLevel.verbose=Verbose
+canmod_mini_v3.menu.DebugLevel.verbose.build.code_debug=5

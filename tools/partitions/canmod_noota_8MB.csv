@@ -1,0 +1,6 @@
+# 320k App-NVS, 7.5MB APP, 128K SPIFFS
+# Name,   Type, SubType, Offset,   Size,     Flags
+nvs,      data, nvs,     0x009000, 0x007000,
+app0,     app,  factory, 0x010000, 0x780000,
+spiffs,   data, spiffs,  0x790000, 0x020000,
+appnvs,   data, nvs,     0x7B0000, 0x050000
